@@ -27,7 +27,7 @@ body{
   justify-content: space-between;
   height: 70px;
 }
-/* logo  TechWave*/
+ /* TechWave*/ */
 .logo {
  width: 219px; 
   height: 32px;
@@ -314,3 +314,277 @@ text-transform: uppercase;
   color: #cfcfcf;
   line-height: 1.6;
 }
+
+   /* Episodes Section */
+
+.episodes {
+  padding: 100px 200px;
+  background: #1A0B2E;
+}
+.episonds-container {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.episonds-container h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.episode {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 22px;
+}
+.video-wrapper {
+  position: relative;
+}
+.video-link {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.video-link iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+  display: block;
+  pointer-events: none;
+}
+
+.img-youtube-podcast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.img-youtube-podcast::before {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(247, 233, 63, 0.9),
+    rgba(251, 9, 180, 0.9),
+    rgba(145, 0, 248, 0.9)
+  );
+  filter: blur(18px);
+  z-index: -1;
+}
+
+.img-youtube-podcast img {
+  width: auto; 
+  height: auto;
+  max-width: 48px;
+  filter: drop-shadow(0 0 18px rgba(145, 0, 248, 0.7));
+}
+.episode-title {
+  color: #FFFFFF;
+font-family: Inter;
+font-style: Bold;
+font-size: 24px;
+font-weight: 700;
+padding: 18px 20px 8px;
+}
+
+.episode p {
+  font-size: 14px;
+  opacity: 0.85;
+  padding: 0 20px 12px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.duration .img-clock {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+}
+
+.duration .img-clock span {
+  position: static;
+  color: #6cffc1;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* Host  Section */
+.host-card {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 40px;
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: flex-start;
+  position: relative;
+  min-height: 300px;
+}
+.host-card-title {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  width: 100%;
+}
+.host-card > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+  grid-column: 1;
+  grid-row: 1;
+}
+.host-info {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 1;
+  height: 100%;
+}
+.host-info h3 {
+  font-family: Inter, sans-serif;
+  font-style: bold;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.host-info p {
+  max-width: 896px;
+  font-family: Inter, sans-serif;
+  font-style: regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.host-social-icon {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+.host-social-icon .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.host-social-icon a {
+  width: 40px;
+  height: 40px;
+  border-radius: 40%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.host-social-icon img {
+  width: 24px;
+  height: 24px;
+}
+/* Footer */
+.footer {
+  background: url('./assets/footer-bg.png') center center / cover no-repeat;
+  text-align: center;
+  padding: 60px 20px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+/* TechWave Logo */
+.footer .logo {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 50px;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 2px;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 800px;
+}
+.footer .logo span {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer .icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.footer .icons ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer .icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer .icons img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.footer p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+
