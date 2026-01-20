@@ -120,7 +120,7 @@ height: 350px;
 .badge{
   position: absolute;
   top: 130px;
-  right: 790px;
+  right: 840px;
   width: 75px;
   height: 38px;
   display: flex;
@@ -532,7 +532,7 @@ padding: 18px 20px 8px;
   letter-spacing: 2px;
   padding: 0 20px;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
 }
 .footer .logo span {
   background: linear-gradient(
@@ -553,7 +553,6 @@ padding: 18px 20px 8px;
   position: relative;
   z-index: 2;
 }
-
 .footer .icons ul {
   display: flex;
   gap: 40px;
@@ -563,7 +562,6 @@ padding: 18px 20px 8px;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .footer .icons a {
   display: flex;
   align-items: center;
@@ -573,7 +571,6 @@ padding: 18px 20px 8px;
   font-size: 16px;
   font-weight: 500;
 }
-
 .footer .icons img {
   width: 24px;
   height: 24px;
@@ -586,5 +583,23 @@ padding: 18px 20px 8px;
   position: relative;
   z-index: 2;
 }
+/* Animation */
+.mic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  z-index: 3;
+  animation: pulse 2s ease-in-out infinite;
+}
 
-
+/* Keep the pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
