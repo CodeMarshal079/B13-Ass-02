@@ -17,6 +17,7 @@ body{
 }
 
 .header{
+  background: #1A0B2E;
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
@@ -73,7 +74,123 @@ font-weight: 1000;
     rgba(145, 0, 248, 1) 100%
   );
 }
-
 .btn-sub:hover {
   opacity: 0.9;
+}
+
+/* Banner */
+.hero{
+  position: relative;
+  height: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circle{
+  position: relative;
+width: 350px;
+height: 350px;
+}
+.circle-img{
+  width: 100%;
+  height: 100%;
+}
+.mic{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px; 
+}
+
+.badge{
+  position: absolute;
+
+  top: 130px;      /* slightly outside the circle */
+  right: 680px;    /* top-right corner of circle */
+  width: 75px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+  background: #6cffc1;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 1000px;
+  z-index: 2;
+}
+
+
+
+
+.hero h1{
+  margin-top: 32px;
+  font-size: 48px;
+}
+.hero p{
+  max-width: 600px;
+  margin: 14px auto 30px;
+  opacity: 0.85;
+}
+.hero-buttons{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn-primary,
+.btn-outline{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary{
+  background: linear-gradient(
+    90deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 50%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  color: #fff;
+}
+
+.btn-outline{
+  border: 1px solid #00FF88;
+  color: #fff;
+}
+.hero-buttons img{
+  width: 18px;
+  height: auto;
+}
+.hero-buttons img{
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+.hero-buttons img:hover{
+  transform: scale(1.05);
 }
